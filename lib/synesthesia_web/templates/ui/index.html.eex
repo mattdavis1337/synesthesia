@@ -1,0 +1,21 @@
+<canvas id="myCanvas" width="420" height="220" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+
+	// Create gradient
+	var grd = ctx.createLinearGradient(0,0,400,0);
+	grd.addColorStop(0,"#ce0c82");//magenta
+	grd.addColorStop(.2,"#ff0a0a");
+	grd.addColorStop(.3,"#ff9e0a");
+	grd.addColorStop(.375,"#feff0e"); //yellow
+	grd.addColorStop(.5,"#37d016");
+	grd.addColorStop(.625,"#179ed0");
+	grd.addColorStop(.75,"#8413cf");
+	grd.addColorStop(.875,"#ce0c82");//magenta
+	// Fill with gradient
+	ctx.fillStyle = grd;
+	ctx.fillRect(10,10,400,200);
+</script>
