@@ -2,7 +2,7 @@ defmodule SynesthesiaWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", SynesthesiaWeb.RoomChannel
+  channel "room:*", SynesthesiaWeb.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

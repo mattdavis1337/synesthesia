@@ -1,6 +1,9 @@
 <canvas id="myCanvas" width="420" height="220" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 
+<div id="messages"></div>
+<input id="chat-input" type="text"></input>
+
 <script>
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");

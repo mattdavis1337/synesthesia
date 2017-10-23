@@ -17,9 +17,10 @@ defmodule SynesthesiaWeb.Router do
     pipe_through :browser # Use the default browser stack
 
   
-    get "/x", PageController, :index
+    get "/", PageController, :index
     get "/ui", UiController, :index
     get "/ui/:messenger", UiController, :show
+
 
   end
 

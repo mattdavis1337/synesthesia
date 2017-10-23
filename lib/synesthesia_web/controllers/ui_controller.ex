@@ -9,4 +9,5 @@ defmodule SynesthesiaWeb.UiController do
   	render conn, "show.html", messenger: messenger
   end
 
+  
 end
