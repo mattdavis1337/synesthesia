@@ -2,10 +2,8 @@ exports.config = {
   // See http://brunch.io/#documentation for docs.
   files: {
     javascripts: {
-      joinTo: {
-          "js/app.js": /^js/,
-          "js/vendor.js": /^(?!js)/
-        },
+      joinTo: "js/app.js",
+        
 
       // To use a separate vendor.js bundle, specify two files path
       // http://brunch.io/docs/config#-files-
@@ -25,10 +23,7 @@ exports.config = {
        }
     },
     stylesheets: {
-      joinTo: {
-        "css/app.css": /^css/,
-        "css/vendor.css": /^(?!css)/,
-      }
+      joinTo: "css/app.css"
     },
     templates: {
       joinTo: "js/app.js"
