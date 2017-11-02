@@ -34,18 +34,4 @@ defmodule SynesthesiaWeb.UserSocket do
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil
-
-
-
-  #intercept ["user_joined"]
-
-  #def handle_out("user_joined", msg, socket) do
-  #  if Accounts.ignoring_user?(socket.assigns[:user], msg.user_id) do
-  #    {:noreply, socket}
-  #  else
-  #    push socket, "user_joined", msg
-  #    {:noreply, socket}
-  #  end
-  #end
-
 end

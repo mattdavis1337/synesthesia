@@ -14,14 +14,14 @@ defmodule SynesthesiaWeb.Router do
   end
 
   scope "/", SynesthesiaWeb do
-
     pipe_through :browser # Use the default browser stack
 
+  
     get "/", PageController, :index
     get "/ui", UiController, :index
     get "/ui/:messenger", UiController, :show
 
-    resources "/users", UserController
+
   end
 
   # Other scopes may use custom stacks.
