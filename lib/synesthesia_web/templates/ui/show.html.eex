@@ -1,3 +1,34 @@
+
+
 <div class="jumbotron">
   <h2>Hello World, from <%= @messenger %>!</h2>
+  <canvas id="myCanvas" width="420" height="220" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
 </div>
+<div id="messages"></div>
+<input id="chat-input" type="text"></input>
+
+<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+
+	var data = '<%= @messenger %>';
+
+	var grd = ctx.createLinearGradient(0,0,400,0);
+
+	for(var i = 0; i < data.length; i++){
+		var stop = i/data.length;
+		var color = "#" + data.charCodeAt(i).toString(4);
+		console.log(stop + " " + color);
+		grd.addColorStop(stop,color);
+	}
+
+	// Create gradient
+	
+
+
+	// Fill with gradient
+	ctx.fillStyle = grd;
+	ctx.fillRect(10,10,400,200);
+</script>
